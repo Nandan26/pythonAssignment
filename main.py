@@ -8,6 +8,15 @@ from data_Model import Users
 app = FastAPI()
 
 @app.get("/")
+async def main_page():
+    """home page
+
+    Returns:
+        message
+    """
+    return {"message": "Welcome to the User Information API"}
+
+@app.get("/users")
 async def get_users():
     """return all the users
 
@@ -70,7 +79,7 @@ async def delete_user(id: str):
         id (str): id of the user you want to delete
 
     Returns:
-        dict: deleted user
+        dict : deleted successfully
     """
     user_info.find_one_and_delete({"_id": ObjectId(id)})
     return {"status": "Deleted Successfully"}
