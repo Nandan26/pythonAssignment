@@ -2,6 +2,10 @@
 
 # FastAPI CRUD operation on user database stored on MongoDB atlas
 
+[Link to the FASTAPI UI hosted using railway](https://web-production-ee67.up.railway.app/docs)
+
+[Link to the API hosted using railway](https://web-production-ee67.up.railway.app/)
+
 ## Required libraries/frameworks
 
 1. fastAPI
